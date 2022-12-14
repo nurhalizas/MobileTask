@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/klik"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/judul_tugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/ungu_tua"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Judul" />
+        <TextView
+            android:id="@+id/deskripsi_tugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            android:text="deskripsi tugas" />
+        <TextView
+            android:id="@+id/kategori_tugas"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:drawableStart="@drawable/ic_tanda_seru"
+
+
+
+            android:drawablePadding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            android:text="kategori tugas" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="end"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/edit_tugas"
+            android:src="@drawable/ic_edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <ImageView
+            android:id="@+id/hapus_tugas"
+            android:src="@drawable/ic_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

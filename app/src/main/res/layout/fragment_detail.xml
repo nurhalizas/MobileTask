@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ungu"
+    tools:context=".fragments.DetailFragment">
+
+    <FrameLayout
+        android:background="@color/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_gravity="center|start"
+            android:src="@drawable/ic_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:text="Detail Tugas"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20dp"
+            android:textColor="@color/ungu_tua"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0dp"
+        android:layout_marginTop="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="Matakuliah"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/ungu_tua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/mata_kuliah"
+                android:hint="Matakuliah"
+                android:fontFamily="@font/poppins"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/ungu_tua"
+                android:background="@drawable/bg_rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Kategori Tugas"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="12sp"
+                android:textColor="@color/ungu_tua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/kategori_tugas"
+                android:hint="Matakuliah"
+                android:fontFamily="@font/poppins"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/ungu_tua"
+                android:background="@drawable/bg_rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <TextView
+                android:text="Detail Tugas"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/ungu_tua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/isi_tugas"
+                android:hint="Deskripsi Tugas"
+                android:fontFamily="@font/poppins"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:gravity="start"
+                android:textColor="@color/ungu_tua"
+                android:minHeight="200dp"
+                android:background="@drawable/bg_rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
