@@ -18,6 +18,9 @@
             android:layout_height="30dp"/>
         <TextView
             android:text="Edit Tugas"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/ungu_tua"
+            android:textSize="16dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:layout_width="match_parent"
